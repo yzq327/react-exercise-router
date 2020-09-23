@@ -14,19 +14,17 @@
 }
 ul {   
     list-style: none;   
-    padding: 0px; 
-    margin-right: 10%;
+    padding: 0px;     
     width: 100%;     
 }
 .aboutus {
-    margin-left: 50%;  
+    margin-left: 40%;  
 }
 ul li {     
        list-style: none;         
-       margin-right: 50px; 
+       margin-right: 40px; 
        position:relative;
-       float: left;  
-       
+       float: left;         
 }
 
 a:link{
@@ -36,7 +34,7 @@ a:link{
 li:hover{    
     border-bottom:2px solid black;
 }
-label:hover{    
+.website:hover{    
     color:#FF0000 ;
     border-bottom:2px solid black;
 }
@@ -51,5 +49,30 @@ p {
 }
 .home {
     clear: both;
-    margin-top: 100px;
+    margin-top: 80px;
+}
+.aboutUs, .myprofile {
+    margin-top: 80px;
+}
+.allProduct {
+    display: block;
+    font-size: 1.8em; 
+    padding-left: 100px; 
+    padding-left: 100px; 
+    font-family: 'Raleway', sans-serif; 
+    margin-top: 80px;
+}
+.productInfo {
+    display: block;
+    font-size: 1.8em; 
+    padding-left: 100px; 
+    padding-left: 100px; 
+    font-family: 'Raleway', sans-serif; 
+    color:#FF0000 ;
+    margin-top: 20px;
+    background-color: #ffffff;    
+    border: none;
+}
+button{
+    outline:none;
 }

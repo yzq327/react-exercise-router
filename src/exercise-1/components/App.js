@@ -4,6 +4,7 @@ import {BrowserRouter, Switch, Route, Link} from 'react-router-dom';
 import MyProfile from '../components/MyProfile'
 import Home from '../components/Home'
 import AboutUs from '../components/AboutUs'
+import Products from '../components/Products'
 
 class App extends Component {
   render() {
@@ -15,6 +16,9 @@ class App extends Component {
                     <li className='aboutus'>
                         <Link to='/'>Home</Link>
                     </li>
+                    <li className='products'>
+                        <Link to='/products'>Products</Link>
+                    </li>
                     <li>
                       <Link to='/myprofile'>My profile</Link>
                     </li>
@@ -25,6 +29,7 @@ class App extends Component {
             </nav>
           <Switch>
             <Route exact path='/' component={Home} />
+            <Route path='/products' component={Products} />
             <Route path='/myprofile' component={MyProfile} />
             <Route path='/aboutUs' component={AboutUs} />
           </Switch>
