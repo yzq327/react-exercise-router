@@ -2,38 +2,25 @@
 *{
     color: #000000;   
 }
-.header {
-    width: 100%;
+.header {    
     height: 110px;
     background-color:#AAAAAA;    
     font-size: 2.0em;    
     display: flex; 
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;    
+    padding-right: 40px;    
 }
-ul {   
-    list-style: none;   
-    padding: 0px;     
-    width: 100%;     
-}
-.aboutus {
-    margin-left: 40%;  
-}
-ul li {     
-       list-style: none;         
-       margin-right: 40px; 
-       position:relative;
-       float: left;         
+.hdeaderInfo {
+    margin-left: 40px;      
 }
 
 a:link{
 	text-decoration: none;
 }
 
-li:hover{    
-    border-bottom:2px solid black;
-}
 .website:hover{    
     color:#FF0000 ;
     border-bottom:2px solid black;
