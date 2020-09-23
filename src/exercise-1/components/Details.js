@@ -1,15 +1,34 @@
 import React, { Component } from 'react';
 import '../styles/App.css';
+import data from '../../exercise-2/mockups/data.json'
 
-export default class Details extends Component{
+class Details extends Component{
+    state = {
+        info: {}
+    }
+    componentDidMount() {
+        for (var i in data) {
+            console.log("data[i].id", data[i].id)
+            if (data[i].id == this.props.match.params.id) {
+                this.setState({
+                    info: data[i]
+                })
+                break;
+            }
+        }
+    }
     render(){
         return (
-            <div className="myprofile"> 
-                <p >UserName: YZQ</p>     
-                <p>Gender:female</p>   
-                <p>Work: IT Industry</p>     
-                <p>Website:'/myProfile'</p>                            
-            </div>                       
+            <div className="productdetails"> 
+                <p className='detailsTitle'>Product Details:</p>     
+                <p>Name: {this.state.info.name}</p>  
+                <p>Id: {this.state.info.id}</p> 
+                <p>Price: {this.state.info.price}</p> 
+                <p>Quantity: {this.state.info.quantity}</p> 
+                <p>Desc: {this.state.info.desc}</p> 
+                <p>URL: /products/{this.state.info.id}</p>                             
+            </div>                    
         );
     }
 }
+export default Details;

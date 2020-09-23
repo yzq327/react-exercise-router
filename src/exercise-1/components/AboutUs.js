@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter, Switch, Route, Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../styles/App.css';
 
 export default class AboutUs extends Component{
@@ -9,7 +9,7 @@ export default class AboutUs extends Component{
                 <p>Company: Thoughtworks Local</p>     
                 <p>Location: Xian</p>   
                 <p className='secondp'>For more information, please</p>     
-                <p>view our <label ><Link to='/'>website</Link></label></p>                                      
+                <p>view our <label className="website"><Link to='/'>website</Link></label></p>                                      
             </div>   
                                
         );

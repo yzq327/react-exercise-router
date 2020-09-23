@@ -5,7 +5,7 @@ import MyProfile from '../components/MyProfile'
 import Home from '../components/Home'
 import AboutUs from '../components/AboutUs'
 import Products from '../components/Products'
-
+import Details from '../components/Details'
 class App extends Component {
   render() {
     return (
@@ -17,7 +17,7 @@ class App extends Component {
                         <Link to='/'>Home</Link>
                     </li>
                     <li className='products'>
-                        <Link to='/goods'>Products</Link>
+                        <Link to='/products'>Products</Link>
                     </li>
                     <li>
                       <Link to='/myprofile'>My profile</Link>
@@ -29,9 +29,11 @@ class App extends Component {
             </nav>
           <Switch>
             <Route exact path='/' component={Home} />
+            <Route exact path='/products' component={Products} />
+            <Route exact path='/products/:id' component={Details} />
+            <Route exact path='/myprofile' component={MyProfile} />
+            <Route path='/aboutUs' component={AboutUs} />            
             <Route path='/goods' component={Products} />
-            <Route path='/myprofile' component={MyProfile} />
-            <Route path='/aboutUs' component={AboutUs} />
             <Route component={Home} />
           </Switch>
         </div>
