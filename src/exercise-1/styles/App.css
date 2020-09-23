@@ -1,0 +1,41 @@
+
+.header {
+    width: 100%;
+    height: 110px;
+    background-color:#AAAAAA;    
+    font-size: 2.0em;    
+    display: flex; 
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+ul {   
+    list-style: none;   
+    padding: 0px; 
+    margin-right: 10%;
+    width: 100%;  
+}
+.aboutus {
+    margin-right: 0%;
+}
+ul li {     
+       list-style: none;         
+       margin-right: 50px;     
+       display:inline-block;     
+       position:relative;      
+}
+
+
+p {
+    font-size: 1.8em; 
+    padding-left: 100px; 
+    padding-left: 100px; 
+    font-family: 'Raleway', sans-serif; 
+}
+.secondp {
+    margin-top: 80px; 
+}
+.home {
+    clear: both;
+    margin-top: 100px;
+}
