@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Switch, Route, Link} from 'react-router-dom';
 import '../styles/App.css';
-
 import {BrowserRouter as Router} from 'react-router-dom';
-import {Route} from "react-router";
+import Details from '../components/Details'
+
 class Products extends Component{
     state = {
         id:''
@@ -26,13 +26,10 @@ class Products extends Component{
             <button name='id' className="productInfo"
                     onChange={this.handleChange}
                     value='3'>Pencle</button>
-
             <Router>    
-               <Route path='/{resultid}' component={User} />
-               
-         </Router>
-        </form>
-         
+               <Route path='/products/resultid' component={Details} />               
+            </Router>
+        </form>         
     }
 }
 export default Products;

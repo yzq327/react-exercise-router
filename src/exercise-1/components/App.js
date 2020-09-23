@@ -17,7 +17,7 @@ class App extends Component {
                         <Link to='/'>Home</Link>
                     </li>
                     <li className='products'>
-                        <Link to='/products'>Products</Link>
+                        <Link to='/goods'>Products</Link>
                     </li>
                     <li>
                       <Link to='/myprofile'>My profile</Link>
@@ -29,9 +29,10 @@ class App extends Component {
             </nav>
           <Switch>
             <Route exact path='/' component={Home} />
-            <Route path='/products' component={Products} />
+            <Route path='/goods' component={Products} />
             <Route path='/myprofile' component={MyProfile} />
             <Route path='/aboutUs' component={AboutUs} />
+            <Route component={Home} />
           </Switch>
         </div>
       </BrowserRouter>
